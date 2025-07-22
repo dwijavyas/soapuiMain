@@ -1,0 +1,47 @@
+Status: OK
+Time Taken: 153
+Size: 339
+Timestamp: Mon Jul 21 15:32:00 EDT 2025
+TestStep: ISOCode Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://webservices.oorsprong.org/websamples.countryinfo/countryinfoservice.wso
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/21.0.7)
+Host : webservices.oorsprong.org
+Accept-Encoding : gzip,deflate
+Content-Length : 308
+Content-Type : application/soap+xml;charset=UTF-8
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soap:Header/>
+   <soap:Body>
+      <web:CountryISOCode>
+         <web:sCountryName>India</web:sCountryName>
+      </web:CountryISOCode>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+Web-Service : DataFlex 19.1
+#status# : HTTP/1.1 200 OK
+Content-Length : 339
+Date : Mon, 21 Jul 2025 17:58:45 GMT
+Content-Type : application/soap+xml; charset=utf-8
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <soap:Body>
+      <m:CountryISOCodeResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo">
+         <m:CountryISOCodeResult>IN</m:CountryISOCodeResult>
+      </m:CountryISOCodeResponse>
+   </soap:Body>
+</soap:Envelope>

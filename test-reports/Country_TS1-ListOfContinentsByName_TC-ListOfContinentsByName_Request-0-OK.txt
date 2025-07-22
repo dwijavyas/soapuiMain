@@ -1,0 +1,71 @@
+Status: OK
+Time Taken: 165
+Size: 1103
+Timestamp: Mon Jul 21 15:32:01 EDT 2025
+TestStep: ListOfContinentsByName Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://webservices.oorsprong.org/websamples.countryinfo/countryinfoservice.wso
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: SOAPAction : ""
+Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/21.0.7)
+Host : webservices.oorsprong.org
+Accept-Encoding : gzip,deflate
+Content-Length : 255
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <web:ListOfContinentsByName/>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+Vary : Accept-Encoding
+Web-Service : DataFlex 19.1
+#status# : HTTP/1.1 200 OK
+Date : Mon, 21 Jul 2025 17:58:47 GMT
+Content-Type : text/xml; charset=utf-8
+
+
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Body>
+      <m:ListOfContinentsByNameResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo">
+         <m:ListOfContinentsByNameResult>
+            <m:tContinent>
+               <m:sCode>AF</m:sCode>
+               <m:sName>Africa</m:sName>
+            </m:tContinent>
+            <m:tContinent>
+               <m:sCode>AN</m:sCode>
+               <m:sName>Antarctica</m:sName>
+            </m:tContinent>
+            <m:tContinent>
+               <m:sCode>AS</m:sCode>
+               <m:sName>Asia</m:sName>
+            </m:tContinent>
+            <m:tContinent>
+               <m:sCode>EU</m:sCode>
+               <m:sName>Europe</m:sName>
+            </m:tContinent>
+            <m:tContinent>
+               <m:sCode>OC</m:sCode>
+               <m:sName>Ocenania</m:sName>
+            </m:tContinent>
+            <m:tContinent>
+               <m:sCode>AM</m:sCode>
+               <m:sName>The Americas</m:sName>
+            </m:tContinent>
+         </m:ListOfContinentsByNameResult>
+      </m:ListOfContinentsByNameResponse>
+   </soap:Body>
+</soap:Envelope>

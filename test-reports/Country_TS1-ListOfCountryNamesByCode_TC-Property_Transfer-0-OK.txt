@@ -1,0 +1,14 @@
+Status: OK
+Time Taken: 12
+Size: 0
+Timestamp: Mon Jul 21 15:32:01 EDT 2025
+TestStep: Property Transfer
+
+----------------- Messages ------------------------------
+Performed transfer [countryCode]
+----------------------------------------------------
+countryCode transferred [[AE]] from [ListOfCountryNamesByCode Request.Response] to [#TestSuite#.ISOCode_UAE]
+------------ source path -------------
+declare namespace ns = 'http://www.oorsprong.org/websamples.countryinfo';
+//ns:ListOfCountryNamesByCodeResult/ns:tCountryCodeAndName[ns:sName='United Arab Emirates']/ns:sISOCode
+

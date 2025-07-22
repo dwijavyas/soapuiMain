@@ -1,0 +1,61 @@
+Status: OK
+Time Taken: 147
+Size: 932
+Timestamp: Mon Jul 21 15:32:00 EDT 2025
+TestStep: FullCountryInfo Request
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Endpoint: http://webservices.oorsprong.org/websamples.countryinfo/countryinfoservice.wso
+Encoding: UTF-8
+
+---------------- Request ---------------------------
+Request Headers: Connection : Keep-Alive
+User-Agent : Apache-HttpClient/4.5.5 (Java/21.0.7)
+Host : webservices.oorsprong.org
+Accept-Encoding : gzip,deflate
+Content-Length : 313
+Content-Type : application/soap+xml;charset=UTF-8
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:web="http://www.oorsprong.org/websamples.countryinfo">
+   <soap:Header/>
+   <soap:Body>
+      <web:FullCountryInfo>
+         <web:sCountryISOCode>AE</web:sCountryISOCode>
+      </web:FullCountryInfo>
+   </soap:Body>
+</soap:Envelope>
+
+---------------- Response --------------------------
+Response Headers: Cache-Control : private, max-age=0
+Server : Microsoft-IIS/10.0
+Web-Service : DataFlex 19.1
+#status# : HTTP/1.1 200 OK
+Content-Length : 932
+Date : Mon, 21 Jul 2025 17:58:46 GMT
+Content-Type : application/soap+xml; charset=utf-8
+
+
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+   <soap:Body>
+      <m:FullCountryInfoResponse xmlns:m="http://www.oorsprong.org/websamples.countryinfo">
+         <m:FullCountryInfoResult>
+            <m:sISOCode>AE</m:sISOCode>
+            <m:sName>United Arab Emirates</m:sName>
+            <m:sCapitalCity>Abu Dhabi</m:sCapitalCity>
+            <m:sPhoneCode>971</m:sPhoneCode>
+            <m:sContinentCode>AS</m:sContinentCode>
+            <m:sCurrencyISOCode>AED</m:sCurrencyISOCode>
+            <m:sCountryFlag>http://www.oorsprong.org/WebSamples.CountryInfo/Flags/United_Arab_Emirates.jpg</m:sCountryFlag>
+            <m:Languages>
+               <m:tLanguage>
+                  <m:sISOCode>ara</m:sISOCode>
+                  <m:sName>Arabic</m:sName>
+               </m:tLanguage>
+            </m:Languages>
+         </m:FullCountryInfoResult>
+      </m:FullCountryInfoResponse>
+   </soap:Body>
+</soap:Envelope>

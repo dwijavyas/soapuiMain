@@ -1,0 +1,13 @@
+Status: OK
+Time Taken: 175
+Size: 0
+Timestamp: Mon Jul 21 15:32:00 EDT 2025
+TestStep: Property Transfer
+
+----------------- Messages ------------------------------
+Performed transfer [code]
+----------------------------------------------------
+code transferred [[IN]] from [ISOCode Request.Response] to [#TestSuite#.ISOCode_India]
+------------ source path -------------
+declare namespace m='http://www.oorsprong.org/websamples.countryinfo';
+//m:CountryISOCodeResponse/m:CountryISOCodeResult/text()
